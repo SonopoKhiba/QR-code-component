@@ -9,7 +9,7 @@
 
 body {
     background-color: #F0F0F0;
-    padding: 3px;
+    /* padding: 3px; */
     display: flex;
     justify-content: center;  /* Centers left and right */
     align-items: center; /* Centers up and down */
@@ -18,19 +18,49 @@ body {
 }
 
 #dots {
-    position: fixed;  /* Stayes in the corner even when scrolling */
-    top: 50%;  /* Distance from the top */
-    left: 20px;  /* Distance from the left */
+    position: fixed;
+    /* Stayes in the corner even when scrolling */
+    top: 50%;
+    /* Distance from the top */
+    left: 20px;
+    /* Distance from the left */
     display: flex;
-    flex-direction: column;  /* Arrange dots vertically */
-    gap: 8px;  /* Space between the dots */  
+    flex-direction: column;
+    /* Arrange dots vertically */
+    gap: 8px;
+    /* Space between the dots */
 }
+
 
 #dots span {
     width: 10px;
     height: 10px;
     background-color: blue;
     border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    #dots {
+            position: fixed;
+            /* Stayes in the corner even when scrolling */
+            top: 50%;
+            /* Distance from the top */
+            left: 20px;
+            /* Distance from the left */
+            display: flex;
+            flex-direction: column;
+            /* Arrange dots vertically */
+            gap: 8px;
+            /* Space between the dots */
+        }
+    
+    
+        #dots span {
+            width: 0px;
+            height: 0px;
+            background-color: blue;
+            border-radius: 50%;
+        }
 }
 
 #container {
@@ -41,8 +71,19 @@ body {
     align-items: center;
     width: 1000px;
     height: 360px;
-    
-} 
+}
+
+@media (max-width: 600px) {
+    #container {
+        background-color: #D7E2EF;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1000px;
+        height: 490px;
+    }
+}
 
 .card {
     background-color: white;
@@ -57,16 +98,19 @@ body {
 
 .card img {
     width: 180px;
+    box-shadow: 200px;
 }
 
 .text-container h2 {
-    font-size: 15px;
+    font-family: sans-serif;
+    font-size: 14px;
     font-weight: bold;
     text-align: center;
 }
 
 .text-container p {
-    font-size: 13px;
+    font-family: sans-serif;
+    font-size: 11px;
     color: gray;
     text-align: center;
 }
