@@ -15,6 +15,7 @@ body {
     align-items: center; /* Centers up and down */
     height: 100vh; /* Full viewport height */
     margin: 0; /* Remove default margin */
+    font-weight: 400;
 }
 
 #dots {
@@ -63,17 +64,7 @@ body {
         }
 }
 
-#container {
-    background-color: #D7E2EF;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1000px;
-    height: 360px;
-}
-
-@media (max-width: 600px) {
+@media (max-width: 375px) {
     #container {
         background-color: #D7E2EF;
         padding: 50px;
@@ -83,6 +74,18 @@ body {
         width: 1000px;
         height: 490px;
     }
+}
+
+@media (max-width: 1440px) {
+    #container {
+            background-color: #D7E2EF;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1000px;
+            height: 360px;
+        }
 }
 
 .card {
