@@ -24,8 +24,8 @@ Creating a web page with a QR code. The web page has scalling for different devi
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/SonopoKhiba/SonopoKhiba.github.io)
-- Live Site URL: [Add live site URL here](https://sonopokhiba.github.io/)
+- Solution URL: [Click here](https://github.com/SonopoKhiba/SonopoKhiba.github.io)
+- Live Site URL: [Click here](https://sonopokhiba.github.io/)
 
 ## My process
 
